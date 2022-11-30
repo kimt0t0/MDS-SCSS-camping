@@ -1,0 +1,304 @@
+/** On réadapte la page à 100% de l'écran **/
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #FAF4F2;
+    margin: 0;
+    font-family: 'Archivo';
+}
+
+main{
+    width: 100%;
+}
+
+/**
+*      HEADER
+**/
+
+header{
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    position: fixed; 
+    top: 0;
+    padding: 30px 0;
+}
+
+header #logo img{
+    vertical-align: middle;
+}
+
+header nav ul li {
+    padding: 0 10px;
+}
+
+header nav ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+header div:last-child a{
+    color: white;
+    margin-right: 15px;
+}
+header div:last-child a:last-child{
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 15px
+}
+
+
+/** Blocks de gauche et de droite **/
+header>div:first-child{
+    padding-left: 50px;
+}
+
+header div:last-child{
+    padding-right: 50px;
+    margin-top: 16px;
+}
+
+/** Quand le header scroll **/
+header.srolling{
+background-color: white;
+color:black;
+z-index: 999;
+}
+
+header.srolling nav ul li a{
+    color:black;
+    text-decoration: none;
+}
+
+header.srolling div:last-child a{
+    color: black;
+}
+header.srolling div:last-child a:last-child{
+    border: 1px solid black;
+}
+/** 
+*      Première section
+**/
+
+section#home{
+    padding-top: 120px;
+    height: 70vh; /** 70% de la taille de la hauteur de l'écran **/
+    width: 100%;
+    background-image: linear-gradient(#ffffff31, #ffffff31), url(./images/fond.jpg);
+    background-size: cover;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    text-align: center;
+    color: white;
+}
+section#home h1{
+    font-size: 81px;
+    margin-bottom: 0;
+}
+
+/* boutton */ 
+section#home div {
+    margin-top: 40px;
+}
+section#home a{
+    background-color: #E76F51;
+    color: white;
+    border-radius: 25px;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+section#home a:hover{
+    background-color: #d02a00;
+}
+
+/**
+* Informations
+**/
+
+#information{
+    text-align: center;
+    margin-top: -75px;
+}
+
+
+.camping-info{
+    text-align: center;
+    background-color: white;
+    padding: 50px 15px;
+    border-radius: 30px;
+}
+
+
+/*** Activités ***/
+
+#activities{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#activities h2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#activities h2:before{
+    content:"";
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: transparent url('./images/explore.png') 0 0 no-repeat padding-box;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.activity{
+    background-color: white;
+    padding: 30px 30px;
+    border-radius: 15px;
+}
+
+.activity .image-container{
+    width: 100%;
+    height: 180px;
+    position: relative;
+    background-image: linear-gradient(#ffffff31,#ffffff31), 
+     url("./images/nature-1.jpg"); 
+    background-size: cover;
+    border-radius: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.activity .image-container img#bg{
+    position: absolute;
+    top:0;
+    right:0;
+    width: 100%;
+    height: auto;
+    transition: transform 5s linear; 
+}
+.activity .image-container:hover img#bg{
+    transform: scale(2, 2);
+}
+
+.activity .image-container img{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background-color: white;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+.activity .image-container span{
+    color: #e77051;
+    position: absolute;
+    bottom: -10px;
+    left: 33%;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.activity button{
+    background-color: #eee;
+    border-radius: 25px;
+    padding: 15px 30px;
+    border: none;
+    text-transform: capitalize;
+    color: gray;
+    font-weight: bold;
+}
+/** lien fin de block **/
+#activities div:last-child{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+#activities div:last-child a{
+    border: 1px solid #e77051;
+    border-radius: 30px;
+    padding: 15px 50px;
+    color:#e77051;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+/**
+*
+*   Section contact
+*
+**/
+
+#contact {
+    height: 400px;
+    margin: 0 auto;
+    background-color: #F8E1DB;
+    padding: 30px 30px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+#contact .item-right{
+    background-image: URL("./images/camp.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+}
+#contact form{
+    position:relative;
+}
+#contact input[type="text"]{
+    border:none;
+    width: 100%;
+    padding:20px 15px;
+    border-radius: 15px;
+    position: relative;
+}
+
+#contact input[type="submit"]{
+    background: url('./images/send.png');
+    border: 0;
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-color: #e77051;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 8px;
+    right: -20px;
+    box-shadow: 5px 10px 30px #E76F5166;
+}
+
+/**
+*
+* Footer
+*
+**/
+
+footer{
+    background-color: #F8E1DB;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+    width: 100%;
+    min-height: 300px;
+}
+footer .container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+footer .item-right div{
+    vertical-align: top;
+    padding-right: 30px;
+}
+footer .item-right div ul{
+    padding: 0;
+}
+footer .item-right div li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+footer .item-right div li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
