@@ -1,0 +1,51 @@
+/* ***** CONTACT ***** */
+#contact {
+  @include card(auto, $primary-midlighter);
+  height: 400px;
+  margin: 0 50px;
+  padding: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  /* ITEM LEFT */
+  .item-left {
+    width: 35%;
+    p {
+      font-weight: 600;
+    }
+    form{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 80px;
+      border: none;
+      padding: 20px 15px;
+      border-radius: 15px;
+      background-color: $white;
+      input[type="text"]{
+        width: 80%;
+      }
+      input[type="submit"]{
+        display: flex;
+        background: url('./images/send.png');
+        border: 0;
+        height: 40px;
+        width: 40px;
+        background-color: $primary;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+        box-shadow: 5px 10px 30px $primary-midlighter;
+      }
+    }
+  }
+  /* ITEM RIGHT */
+  .item-right{
+    background-image: URL("./images/camp.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 100%;
+    width: 40%;
+  }
+}

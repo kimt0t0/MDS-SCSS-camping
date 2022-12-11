@@ -1,0 +1,73 @@
+/* ***** HEADER ***** */
+header{
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+  position: fixed; 
+  top: 0;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Right and left blocs */
+  >div:first-child{
+    padding-left: 50px;
+  }
+  header div:last-child{
+    padding-right: 50px;
+    margin-top: 16px;
+  }
+  /* LEFT SIDE */
+  .item-left {
+    display: flex;
+    align-items: center;
+    #logo img{
+      vertical-align: middle;
+    }
+    /* Nav list */
+    nav ul {
+      display: flex;
+      li {
+      padding: 0 10px;
+        a{
+          color:$white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  /* *** RIGHT SIDE *** */
+  div:last-child a{
+    color: $white;
+    margin-right: 15px;
+    &:last-child{
+      border: 1px solid $white;
+      border-radius: 30px;
+      padding: 10px 15px
+    }
+  }
+}
+
+
+/* *** ON SCROLL *** */
+
+
+
+/** Quand le header scroll **/
+header.srolling{
+  background-color: $white;
+  color:$black;
+  z-index: 999;
+  nav ul li a{
+    color:$black;
+    text-decoration: none;
+  }
+  div:last-child a{
+    color: $black;
+    &:last-child{
+      border: 1px solid $black;
+    }
+  }
+}

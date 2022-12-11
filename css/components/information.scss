@@ -1,0 +1,16 @@
+/* ***** INFORMATION ***** */
+#information{
+  margin-top: -100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: $primary-lighter;
+}
+
+
+.camping-info{
+  @include card(340px, $white);
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}

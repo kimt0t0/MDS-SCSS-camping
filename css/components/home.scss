@@ -1,0 +1,29 @@
+/* ***** HOME ***** */
+section#home{
+  position: relative;
+  z-index: 2;
+  padding-top: 120px;
+  height: 600px;
+  width: 100%;
+  background-image: linear-gradient(#ffffff31, #ffffff31), url(./images/fond.jpg);
+  background-size: cover;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  text-align: center;
+  color: $white;
+  h1{
+    font-size: 81px;
+    margin-bottom: 0;
+  }
+  /* button */
+  div {
+    margin-top: 40px;
+  }
+  a {
+    @include button($white, $primary, $primary);
+    &:hover{
+      background-color: $primary-darker;
+      border: $primary-darker;
+    }
+  }
+}

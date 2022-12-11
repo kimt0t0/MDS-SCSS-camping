@@ -1,0 +1,19 @@
+@mixin card($width, $bg-color) {
+  box-sizing: border-box;
+  width: $width;
+  height: fit-content;
+  background-color: $bg-color;
+  padding: 30px 30px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+@mixin button($color, $border-color, $bg-color) {
+  color: $color;
+  background-color: $bg-color;
+  border: 2px solid $border-color;
+  border-radius: 25px;
+  padding: 10px 50px;
+  text-decoration: none;
+  transition: all 500ms ease-out;
+}
