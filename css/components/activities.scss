@@ -36,7 +36,7 @@
 }
 
 /* Cards */
-@for $i from 1 to 13 {
+@for $i from 1 to 14 {
   .activity:nth-child(#{$i}){
     @include card(340px, $white);
     @media (max-width: $m) {
@@ -47,7 +47,7 @@
       height: 180px;
       position: relative;
       background: linear-gradient(#ffffff31,#ffffff31), 
-        url("./images/nature/nature-#{$i}.jpg");
+        url("./images/nature/nature-#{$i - 1}.jpg");
       background-size: cover;
       border-radius: 20px;
       margin: 0 auto;
@@ -92,8 +92,10 @@
 /* Endblock Link */
 #activities > div:nth-child(14){
   width: 100%;
+  height: 200px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 #activities div:last-child a{
   @include button($primary, $primary, transparent);
