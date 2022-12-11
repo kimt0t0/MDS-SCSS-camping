@@ -1,7 +1,7 @@
 @mixin card($width, $bg-color) {
   box-sizing: border-box;
   width: $width;
-  height: fit-content;
+  height: auto;
   background-color: $bg-color;
   padding: 30px 30px;
   border-radius: 15px;
