@@ -27,25 +27,58 @@ header{
       vertical-align: middle;
     }
     /* Nav list */
-    nav ul {
+    nav {
+      ul {
       display: flex;
-      li {
-      padding: 0 10px;
-        a{
-          color:$white;
-          text-decoration: none;
+      @media (max-width: $m) {
+        display: none;
+      }
+        li {
+        padding: 0 10px;
+          a{
+            color:$white;
+            text-decoration: none;
+          }
         }
       }
     }
   }
   /* *** RIGHT SIDE *** */
-  div:last-child a{
-    color: $white;
-    margin-right: 15px;
-    &:last-child{
-      border: 1px solid $white;
-      border-radius: 30px;
-      padding: 10px 15px
+  .item-right {
+    @media (max-width: $m) {
+      a {
+        display: none;
+      }
+      box-sizing: border-box;
+      width: 30px;
+      height: 40px;
+      margin-right: 50px;
+      border-radius: 15px;
+      background-color: $primary-lighter;
+      position: relative;
+      cursor: pointer;
+      &::before {
+        display: flex;
+        content: "";
+        width: 25px;
+        height: 2.5px;
+        background: $primary;
+        box-shadow: 
+          0 5px 0 0 $primary,
+          0 10px 0 0 $primary;
+        position: absolute;
+        left: 12px;
+        top: 15px;
+      }
+    }
+    div:last-child a{
+      color: $white;
+      margin-right: 15px;
+      &:last-child{
+        border: 1px solid $white;
+        border-radius: 30px;
+        padding: 10px 15px
+      }
     }
   }
 }
