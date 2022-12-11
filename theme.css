@@ -44,6 +44,18 @@ header .item-left nav ul li {
 header .item-left nav ul li a {
   color: #fff;
   text-decoration: none;
+  position: relative;
+}
+header .item-left nav ul li a:hover::before {
+  content: "";
+  width: 35px;
+  height: 3px;
+  background-color: #E76F51;
+  transform: rotate(40deg);
+  top: 10px;
+  left: 15%;
+  position: absolute;
+  z-index: -1;
 }
 @media (max-width: 900px) {
   header .item-right {
@@ -62,7 +74,7 @@ header .item-left nav ul li a {
   header .item-right::before {
     display: flex;
     content: "";
-    width: 25px;
+    width: 22px;
     height: 2.5px;
     background: #E76F51;
     box-shadow: 0 5px 0 0 #E76F51, 0 10px 0 0 #E76F51;
@@ -71,11 +83,11 @@ header .item-left nav ul li a {
     top: 15px;
   }
 }
-header .item-right div:last-child a {
+header .item-right a {
   color: #fff;
   margin-right: 15px;
 }
-header .item-right div:last-child a:last-child {
+header .item-right a:last-child {
   border: 1px solid #fff;
   border-radius: 30px;
   padding: 10px 15px;
@@ -87,6 +99,15 @@ header.srolling {
   background-color: #fff;
   color: #000;
   z-index: 999;
+}
+@media (max-width: 900px) {
+  header.srolling .item-right {
+    background-color: #E76F51;
+  }
+  header.srolling .item-right::before {
+    background: #FAF5F2;
+    box-shadow: 0 5px 0 0 #FAF5F2, 0 10px 0 0 #FAF5F2;
+  }
 }
 header.srolling nav ul li a {
   color: #000;
@@ -500,6 +521,10 @@ main {
 ul, ol {
   list-style-type: none;
   margin: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
