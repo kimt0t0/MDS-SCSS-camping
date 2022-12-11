@@ -36,54 +36,56 @@
 }
 
 /* Cards */
-.activity{
-  @include card(340px, $white);
-  @media (max-width: $m) {
-    width: 100%;
-  }
-  .image-container{
-    width: 100%;
-    height: 180px;
-    position: relative;
-    background-image: linear-gradient(#ffffff31,#ffffff31), 
-     url("./images/nature-1.jpg"); 
-    background-size: cover;
-    border-radius: 20px;
-    margin: 0 auto;
-    overflow: hidden;
-    img#bg{
-      position: absolute;
-      top:0;
-      right:0;
+@for $i from 1 to 13 {
+  .activity:nth-child(#{$i}){
+    @include card(340px, $white);
+    @media (max-width: $m) {
       width: 100%;
-      height: auto;
-      transition: transform 5s linear; 
     }
-    &:hover img#bg{
-      transform: scale(2, 2);
+    .image-container{
+      width: 100%;
+      height: 180px;
+      position: relative;
+      background: linear-gradient(#ffffff31,#ffffff31), 
+        url("./images/nature/nature-#{$i}.jpg");
+      background-size: cover;
+      border-radius: 20px;
+      margin: 0 auto;
+      overflow: hidden;
+      img#bg{
+        position: absolute;
+        top:0;
+        right:0;
+        width: 100%;
+        height: auto;
+        transition: transform 5s linear; 
+      }
+      &:hover img#bg{
+        transform: scale(2, 2);
+      }
+      img{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        background-color: $white;
+        padding: 5px 5px;
+        border-radius: 10px;
+      }
+      span{
+        color: $primary;
+        position: absolute;
+        bottom: -10px;
+        left: 33%;
+        background-color: $white;
+        padding: 10px 10px;
+        border-radius: 10px;
+      }
     }
-    img{
-      position: absolute;
-      right: 15px;
-      top: 15px;
-      background-color: $white;
-      padding: 5px 5px;
-      border-radius: 10px;
+    button{
+      @include button($grey, $background, $background);
+      text-transform: capitalize;
+      font-weight: bold;
     }
-    span{
-      color: $primary;
-      position: absolute;
-      bottom: -10px;
-      left: 33%;
-      background-color: $white;
-      padding: 10px 10px;
-      border-radius: 10px;
-    }
-  }
-  button{
-    @include button($grey, $background, $background);
-    text-transform: capitalize;
-    font-weight: bold;
   }
 }
 

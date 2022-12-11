@@ -253,7 +253,7 @@ section#home a:hover {
 }
 
 /* Cards */
-.activity {
+.activity:nth-child(1) {
   box-sizing: border-box;
   width: 340px;
   height: auto;
@@ -263,26 +263,26 @@ section#home a:hover {
   margin: 10px;
 }
 @media (max-width: 900px) {
-  .activity {
+  .activity:nth-child(1) {
     margin: 10px 0;
   }
 }
 @media (max-width: 900px) {
-  .activity {
+  .activity:nth-child(1) {
     width: 100%;
   }
 }
-.activity .image-container {
+.activity:nth-child(1) .image-container {
   width: 100%;
   height: 180px;
   position: relative;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.1921568627), rgba(255, 255, 255, 0.1921568627)), url("./images/nature-1.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.1921568627), rgba(255, 255, 255, 0.1921568627)), url("./images/nature/nature-1.jpg");
   background-size: cover;
   border-radius: 20px;
   margin: 0 auto;
   overflow: hidden;
 }
-.activity .image-container img#bg {
+.activity:nth-child(1) .image-container img#bg {
   position: absolute;
   top: 0;
   right: 0;
@@ -290,10 +290,10 @@ section#home a:hover {
   height: auto;
   transition: transform 5s linear;
 }
-.activity .image-container:hover img#bg {
+.activity:nth-child(1) .image-container:hover img#bg {
   transform: scale(2, 2);
 }
-.activity .image-container img {
+.activity:nth-child(1) .image-container img {
   position: absolute;
   right: 15px;
   top: 15px;
@@ -301,7 +301,7 @@ section#home a:hover {
   padding: 5px 5px;
   border-radius: 10px;
 }
-.activity .image-container span {
+.activity:nth-child(1) .image-container span {
   color: #E76F51;
   position: absolute;
   bottom: -10px;
@@ -310,7 +310,766 @@ section#home a:hover {
   padding: 10px 10px;
   border-radius: 10px;
 }
-.activity button {
+.activity:nth-child(1) button {
+  color: gray;
+  background-color: #eee;
+  border: 2px solid #eee;
+  border-radius: 25px;
+  padding: 10px 50px;
+  text-decoration: none;
+  transition: all 500ms ease-out;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.activity:nth-child(2) {
+  box-sizing: border-box;
+  width: 340px;
+  height: auto;
+  background-color: #fff;
+  padding: 30px 30px;
+  border-radius: 15px;
+  margin: 10px;
+}
+@media (max-width: 900px) {
+  .activity:nth-child(2) {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 900px) {
+  .activity:nth-child(2) {
+    width: 100%;
+  }
+}
+.activity:nth-child(2) .image-container {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.1921568627), rgba(255, 255, 255, 0.1921568627)), url("./images/nature/nature-2.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.activity:nth-child(2) .image-container img#bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 5s linear;
+}
+.activity:nth-child(2) .image-container:hover img#bg {
+  transform: scale(2, 2);
+}
+.activity:nth-child(2) .image-container img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: #fff;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+.activity:nth-child(2) .image-container span {
+  color: #E76F51;
+  position: absolute;
+  bottom: -10px;
+  left: 33%;
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.activity:nth-child(2) button {
+  color: gray;
+  background-color: #eee;
+  border: 2px solid #eee;
+  border-radius: 25px;
+  padding: 10px 50px;
+  text-decoration: none;
+  transition: all 500ms ease-out;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.activity:nth-child(3) {
+  box-sizing: border-box;
+  width: 340px;
+  height: auto;
+  background-color: #fff;
+  padding: 30px 30px;
+  border-radius: 15px;
+  margin: 10px;
+}
+@media (max-width: 900px) {
+  .activity:nth-child(3) {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 900px) {
+  .activity:nth-child(3) {
+    width: 100%;
+  }
+}
+.activity:nth-child(3) .image-container {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.1921568627), rgba(255, 255, 255, 0.1921568627)), url("./images/nature/nature-3.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.activity:nth-child(3) .image-container img#bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 5s linear;
+}
+.activity:nth-child(3) .image-container:hover img#bg {
+  transform: scale(2, 2);
+}
+.activity:nth-child(3) .image-container img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: #fff;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+.activity:nth-child(3) .image-container span {
+  color: #E76F51;
+  position: absolute;
+  bottom: -10px;
+  left: 33%;
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.activity:nth-child(3) button {
+  color: gray;
+  background-color: #eee;
+  border: 2px solid #eee;
+  border-radius: 25px;
+  padding: 10px 50px;
+  text-decoration: none;
+  transition: all 500ms ease-out;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.activity:nth-child(4) {
+  box-sizing: border-box;
+  width: 340px;
+  height: auto;
+  background-color: #fff;
+  padding: 30px 30px;
+  border-radius: 15px;
+  margin: 10px;
+}
+@media (max-width: 900px) {
+  .activity:nth-child(4) {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 900px) {
+  .activity:nth-child(4) {
+    width: 100%;
+  }
+}
+.activity:nth-child(4) .image-container {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.1921568627), rgba(255, 255, 255, 0.1921568627)), url("./images/nature/nature-4.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.activity:nth-child(4) .image-container img#bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 5s linear;
+}
+.activity:nth-child(4) .image-container:hover img#bg {
+  transform: scale(2, 2);
+}
+.activity:nth-child(4) .image-container img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: #fff;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+.activity:nth-child(4) .image-container span {
+  color: #E76F51;
+  position: absolute;
+  bottom: -10px;
+  left: 33%;
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.activity:nth-child(4) button {
+  color: gray;
+  background-color: #eee;
+  border: 2px solid #eee;
+  border-radius: 25px;
+  padding: 10px 50px;
+  text-decoration: none;
+  transition: all 500ms ease-out;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.activity:nth-child(5) {
+  box-sizing: border-box;
+  width: 340px;
+  height: auto;
+  background-color: #fff;
+  padding: 30px 30px;
+  border-radius: 15px;
+  margin: 10px;
+}
+@media (max-width: 900px) {
+  .activity:nth-child(5) {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 900px) {
+  .activity:nth-child(5) {
+    width: 100%;
+  }
+}
+.activity:nth-child(5) .image-container {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.1921568627), rgba(255, 255, 255, 0.1921568627)), url("./images/nature/nature-5.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.activity:nth-child(5) .image-container img#bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 5s linear;
+}
+.activity:nth-child(5) .image-container:hover img#bg {
+  transform: scale(2, 2);
+}
+.activity:nth-child(5) .image-container img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: #fff;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+.activity:nth-child(5) .image-container span {
+  color: #E76F51;
+  position: absolute;
+  bottom: -10px;
+  left: 33%;
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.activity:nth-child(5) button {
+  color: gray;
+  background-color: #eee;
+  border: 2px solid #eee;
+  border-radius: 25px;
+  padding: 10px 50px;
+  text-decoration: none;
+  transition: all 500ms ease-out;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.activity:nth-child(6) {
+  box-sizing: border-box;
+  width: 340px;
+  height: auto;
+  background-color: #fff;
+  padding: 30px 30px;
+  border-radius: 15px;
+  margin: 10px;
+}
+@media (max-width: 900px) {
+  .activity:nth-child(6) {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 900px) {
+  .activity:nth-child(6) {
+    width: 100%;
+  }
+}
+.activity:nth-child(6) .image-container {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.1921568627), rgba(255, 255, 255, 0.1921568627)), url("./images/nature/nature-6.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.activity:nth-child(6) .image-container img#bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 5s linear;
+}
+.activity:nth-child(6) .image-container:hover img#bg {
+  transform: scale(2, 2);
+}
+.activity:nth-child(6) .image-container img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: #fff;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+.activity:nth-child(6) .image-container span {
+  color: #E76F51;
+  position: absolute;
+  bottom: -10px;
+  left: 33%;
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.activity:nth-child(6) button {
+  color: gray;
+  background-color: #eee;
+  border: 2px solid #eee;
+  border-radius: 25px;
+  padding: 10px 50px;
+  text-decoration: none;
+  transition: all 500ms ease-out;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.activity:nth-child(7) {
+  box-sizing: border-box;
+  width: 340px;
+  height: auto;
+  background-color: #fff;
+  padding: 30px 30px;
+  border-radius: 15px;
+  margin: 10px;
+}
+@media (max-width: 900px) {
+  .activity:nth-child(7) {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 900px) {
+  .activity:nth-child(7) {
+    width: 100%;
+  }
+}
+.activity:nth-child(7) .image-container {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.1921568627), rgba(255, 255, 255, 0.1921568627)), url("./images/nature/nature-7.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.activity:nth-child(7) .image-container img#bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 5s linear;
+}
+.activity:nth-child(7) .image-container:hover img#bg {
+  transform: scale(2, 2);
+}
+.activity:nth-child(7) .image-container img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: #fff;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+.activity:nth-child(7) .image-container span {
+  color: #E76F51;
+  position: absolute;
+  bottom: -10px;
+  left: 33%;
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.activity:nth-child(7) button {
+  color: gray;
+  background-color: #eee;
+  border: 2px solid #eee;
+  border-radius: 25px;
+  padding: 10px 50px;
+  text-decoration: none;
+  transition: all 500ms ease-out;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.activity:nth-child(8) {
+  box-sizing: border-box;
+  width: 340px;
+  height: auto;
+  background-color: #fff;
+  padding: 30px 30px;
+  border-radius: 15px;
+  margin: 10px;
+}
+@media (max-width: 900px) {
+  .activity:nth-child(8) {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 900px) {
+  .activity:nth-child(8) {
+    width: 100%;
+  }
+}
+.activity:nth-child(8) .image-container {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.1921568627), rgba(255, 255, 255, 0.1921568627)), url("./images/nature/nature-8.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.activity:nth-child(8) .image-container img#bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 5s linear;
+}
+.activity:nth-child(8) .image-container:hover img#bg {
+  transform: scale(2, 2);
+}
+.activity:nth-child(8) .image-container img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: #fff;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+.activity:nth-child(8) .image-container span {
+  color: #E76F51;
+  position: absolute;
+  bottom: -10px;
+  left: 33%;
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.activity:nth-child(8) button {
+  color: gray;
+  background-color: #eee;
+  border: 2px solid #eee;
+  border-radius: 25px;
+  padding: 10px 50px;
+  text-decoration: none;
+  transition: all 500ms ease-out;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.activity:nth-child(9) {
+  box-sizing: border-box;
+  width: 340px;
+  height: auto;
+  background-color: #fff;
+  padding: 30px 30px;
+  border-radius: 15px;
+  margin: 10px;
+}
+@media (max-width: 900px) {
+  .activity:nth-child(9) {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 900px) {
+  .activity:nth-child(9) {
+    width: 100%;
+  }
+}
+.activity:nth-child(9) .image-container {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.1921568627), rgba(255, 255, 255, 0.1921568627)), url("./images/nature/nature-9.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.activity:nth-child(9) .image-container img#bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 5s linear;
+}
+.activity:nth-child(9) .image-container:hover img#bg {
+  transform: scale(2, 2);
+}
+.activity:nth-child(9) .image-container img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: #fff;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+.activity:nth-child(9) .image-container span {
+  color: #E76F51;
+  position: absolute;
+  bottom: -10px;
+  left: 33%;
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.activity:nth-child(9) button {
+  color: gray;
+  background-color: #eee;
+  border: 2px solid #eee;
+  border-radius: 25px;
+  padding: 10px 50px;
+  text-decoration: none;
+  transition: all 500ms ease-out;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.activity:nth-child(10) {
+  box-sizing: border-box;
+  width: 340px;
+  height: auto;
+  background-color: #fff;
+  padding: 30px 30px;
+  border-radius: 15px;
+  margin: 10px;
+}
+@media (max-width: 900px) {
+  .activity:nth-child(10) {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 900px) {
+  .activity:nth-child(10) {
+    width: 100%;
+  }
+}
+.activity:nth-child(10) .image-container {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.1921568627), rgba(255, 255, 255, 0.1921568627)), url("./images/nature/nature-10.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.activity:nth-child(10) .image-container img#bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 5s linear;
+}
+.activity:nth-child(10) .image-container:hover img#bg {
+  transform: scale(2, 2);
+}
+.activity:nth-child(10) .image-container img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: #fff;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+.activity:nth-child(10) .image-container span {
+  color: #E76F51;
+  position: absolute;
+  bottom: -10px;
+  left: 33%;
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.activity:nth-child(10) button {
+  color: gray;
+  background-color: #eee;
+  border: 2px solid #eee;
+  border-radius: 25px;
+  padding: 10px 50px;
+  text-decoration: none;
+  transition: all 500ms ease-out;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.activity:nth-child(11) {
+  box-sizing: border-box;
+  width: 340px;
+  height: auto;
+  background-color: #fff;
+  padding: 30px 30px;
+  border-radius: 15px;
+  margin: 10px;
+}
+@media (max-width: 900px) {
+  .activity:nth-child(11) {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 900px) {
+  .activity:nth-child(11) {
+    width: 100%;
+  }
+}
+.activity:nth-child(11) .image-container {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.1921568627), rgba(255, 255, 255, 0.1921568627)), url("./images/nature/nature-11.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.activity:nth-child(11) .image-container img#bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 5s linear;
+}
+.activity:nth-child(11) .image-container:hover img#bg {
+  transform: scale(2, 2);
+}
+.activity:nth-child(11) .image-container img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: #fff;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+.activity:nth-child(11) .image-container span {
+  color: #E76F51;
+  position: absolute;
+  bottom: -10px;
+  left: 33%;
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.activity:nth-child(11) button {
+  color: gray;
+  background-color: #eee;
+  border: 2px solid #eee;
+  border-radius: 25px;
+  padding: 10px 50px;
+  text-decoration: none;
+  transition: all 500ms ease-out;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.activity:nth-child(12) {
+  box-sizing: border-box;
+  width: 340px;
+  height: auto;
+  background-color: #fff;
+  padding: 30px 30px;
+  border-radius: 15px;
+  margin: 10px;
+}
+@media (max-width: 900px) {
+  .activity:nth-child(12) {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 900px) {
+  .activity:nth-child(12) {
+    width: 100%;
+  }
+}
+.activity:nth-child(12) .image-container {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.1921568627), rgba(255, 255, 255, 0.1921568627)), url("./images/nature/nature-12.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.activity:nth-child(12) .image-container img#bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  transition: transform 5s linear;
+}
+.activity:nth-child(12) .image-container:hover img#bg {
+  transform: scale(2, 2);
+}
+.activity:nth-child(12) .image-container img {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: #fff;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+.activity:nth-child(12) .image-container span {
+  color: #E76F51;
+  position: absolute;
+  bottom: -10px;
+  left: 33%;
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+.activity:nth-child(12) button {
   color: gray;
   background-color: #eee;
   border: 2px solid #eee;
