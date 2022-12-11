@@ -13,6 +13,11 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  @media (max-width: $m) {
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 #activities h2:before{
   content:"";
@@ -26,6 +31,9 @@
 
 .activity{
   @include card(340px, $white);
+  @media (max-width: $m) {
+    width: auto;
+  }
 }
 
 .activity .image-container{

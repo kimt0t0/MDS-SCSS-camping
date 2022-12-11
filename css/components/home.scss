@@ -11,6 +11,9 @@ section#home{
   border-bottom-right-radius: 100px;
   text-align: center;
   color: $white;
+  @media (max-width: $m) {
+    height: 800px;
+  }
   h1{
     font-size: 81px;
     margin-bottom: 0;

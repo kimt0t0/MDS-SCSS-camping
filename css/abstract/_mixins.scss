@@ -6,6 +6,9 @@
   padding: 30px 30px;
   border-radius: 15px;
   margin: 10px;
+  @media (max-width: $m) {
+    margin: 10px 0;
+  }
 }
 
 @mixin button($color, $border-color, $bg-color) {

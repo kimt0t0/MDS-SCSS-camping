@@ -6,37 +6,54 @@ footer{
   width: 100%;
   min-height: 300px;
   padding: 100px;
+  @media (max-width: $m) {
+    padding: 100px 15px;
+  }
   > div{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     h4 {
       font-weight: 800;
     }
     .item-left {
       width: 40%;
       text-align: justify;
+      @media (max-width: $m) {
+        width: 100%;
+      }
+      >div:nth-child(2) {
+        height: 120px;
+      }
     } 
     .item-right {
       width: 50%;
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+      @media (max-width: $m) {
+        width: 100%;
+        >div {
+          width: 50%;
+          margin: 20px 0;
+        }
+      }
+      div{
+        vertical-align: top;
+        padding-right: 30px;
+        ul{
+          padding: 0;
+          li{
+            list-style: none;
+            padding-bottom: 10px;
+            a{
+              text-decoration: none;
+              color: $black;
+              font-weight: 300;
+            }
+          }
+        }
+      }
     }
   }
-}
-
-footer .item-right div{
-  vertical-align: top;
-  padding-right: 30px;
-}
-footer .item-right div ul{
-  padding: 0;
-}
-footer .item-right div li{
-  list-style: none;
-  padding-bottom: 10px;
-}
-footer .item-right div li a{
-  text-decoration: none;
-  color: $black;
-  font-weight: 300;
 }
