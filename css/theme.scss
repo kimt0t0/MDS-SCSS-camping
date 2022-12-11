@@ -7,6 +7,7 @@
 @import './components/information.scss';
 @import './components/activities.scss';
 @import './components/contact.scss';
+@import './components/footer.scss';
 
 /* ***** GENERAL ***** */
 html, body{
@@ -26,41 +27,3 @@ ul, ol {
   margin: 0 !important;
 }
 
-
-
-
-
-/**
-*
-* Footer
-*
-**/
-
-footer{
-  background-color: $primary-lighter;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px; 
-  width: 100%;
-  min-height: 300px;
-}
-footer .container{
-  width: 70%;
-  margin: 0 auto;
-}
-
-footer .item-right div{
-  vertical-align: top;
-  padding-right: 30px;
-}
-footer .item-right div ul{
-  padding: 0;
-}
-footer .item-right div li{
-  list-style: none;
-  padding-bottom: 10px;
-}
-footer .item-right div li a{
-  text-decoration: none;
-  color: $black;
-  font-weight: 300;
-}
